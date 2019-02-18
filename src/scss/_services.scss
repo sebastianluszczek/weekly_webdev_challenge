@@ -1,0 +1,43 @@
+.services {
+    background-color: #70bfff;
+
+    .services-title {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-70%);
+        font-weight: 700;
+        color: #fff;
+    }
+
+    .service-box {
+        width: 80%;
+        height: 60px;
+        background-color: #eee;
+        margin: 30px auto;
+
+        .box-text {
+            position: relative;
+            height: 100%;
+            border-right: 1px solid #888;
+        }
+
+        h5 {
+            text-align: center;
+            font-size: 20px;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+        }
+
+        .fas {
+            text-align: center;
+            font-size: 32px;
+            margin: 15px 10px;
+            color: #444;
+        }
+    }
+}

@@ -2,14 +2,252 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous" />
+  <!-- Compiled and minified Matrialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+  <title>Challenge #2</title>
 </head>
 
 <body>
-    <h1>Test Webpack</h1>
+  <header>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper container">
+          <a href="#!" class="brand-logo">Cahee</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Servises</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="baner" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m5 mt-5">
+            <h2 class="section-title">Fresh Life</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Quidem, placeat eius fugiat inventore id necessitatibus non
+              tenetur dolorem. Non, officiis delectus. Error consequatur
+              quaerat dolores.
+            </p>
+            <div class="btn btn-large amber darken-4 mt-2">Get Free now</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="about" id="about">
+      <div class="container full">
+        <div class="row">
+          <div class="col s12 m6">
+            <img src="./img/2-90.png" class="responsive-img" />
+          </div>
+          <div class="col s12 m5 offset-m1 white-text">
+            <h2 class="section-title">About Us</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Quidem, placeat eius fugiat inventore id necessitatibus non
+              tenetur dolorem. Non, officiis delectus. Error consequatur
+              quaerat dolores.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum recusandae accusamus, ad, obcaecati magnam eius quia
+              quae, saepe soluta suscipit voluptas pariatur libero vero eaque
+              eum impedit optio consequatur? Dolores?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services" id="services">
+      <div class="container full">
+        <div class="row" style="position: relative">
+          <div class="col s12 m7">
+            <div class="service-box">
+              <div class="row">
+                <div class="col s9 box-text">
+                  <h5>Online Shopping</h5>
+                </div>
+                <div class="col s3">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+            <div class="service-box">
+              <div class="row">
+                <div class="col s9 box-text">
+                  <h5>Quality Products</h5>
+                </div>
+                <div class="col s3">
+                  <i class="fas fa-carrot"></i>
+                </div>
+              </div>
+            </div>
+            <div class="service-box">
+              <div class="row">
+                <div class="col s9 box-text">
+                  <h5>Domestic & International Delivery</h5>
+                </div>
+                <div class="col s3">
+                  <i class="fas fa-globe-africa"></i>
+                </div>
+              </div>
+            </div>
+            <div class="service-box">
+              <div class="row">
+                <div class="col s9 box-text">
+                  <h5>Well Organized</h5>
+                </div>
+                <div class="col s3">
+                  <i class="fas fa-sitemap"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m5">
+            <img src="./img/2-84.png" class="responsive-img" />
+            <h4 class="services-title section-title">Our Services</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="section gallery" id="gallery">
+      <div class="container">
+        <h4 class="section-title mt-5">Gallery</h4>
+        <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias natus exercitationem
+          neque laudantium
+          facilis sed quam esse repellat tempore commodi?</p>
+        <div class="image-grid">
+          <img src="./img/2-64.png" class="image1">
+          <img src="./img/2-62.png" class="image2">
+          <img src="./img/2-60.png" class="image3">
+          <img src="./img/2-58.png" class="image4">
+          <img src="./img/2-56.png" class="image5">
+        </div>
+        <div class="btn teal lighten-2 btn-large mt-2 mb-3">View More</div>
+      </div>
+    </div>
+    <div class="section subscribe" id="subscribe">
+      <div class="container">
+        <div class="row mt-2 mb-3">
+          <div class="col s12 m7">
+            <h4 class="section-title">Subscribe To Us</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet animi officiis et optio adipisci ad,
+              modi, explicabo ex quae odit tempore laborum dignissimos? Odit eveniet quibusdam velit, ad necessitatibus
+              rem!</p>
+            <div class="row">
+              <div class="col s12 m9 input-field">
+                <input type="text" placeholder="Your email here...">
+              </div>
+              <div class="col s12 m3">
+                <button class="btn btn-large green">Sebscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <section class="blog" id="blog">
+      <div class="container">
+        <h4 class="section-title pt-5">Blog</h4>
+        <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias natus exercitationem
+          neque laudantium
+          facilis sed quam esse repellat tempore commodi?</p>
+        <div class="row">
+          <div class="col s12 m6 l4">
+            <div class="blog-card" id="blog_1">
+              <div class="date">20 <br> NOV</div>
+              <h5>Green Smoothies: So much of a good thing?</h5>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="blog-card" id="blog_2">
+              <div class="date">14 <br> NOV</div>
+              <h5>Green Smoothies: So much of a good thing?</h5>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="blog-card" id="blog_3">
+              <div class="date">10 <br> NOV</div>
+              <h5>Green Smoothies: So much of a good thing?</h5>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+        <div class="btn red accent-3 btn-large mt-2 mb-3">View More</div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer contact grey darken-3 black-text">
+    <div class="container">
+      <h4 class="section-title mt-2">Contact</h4>
+      <p class="info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis earum temporibus expedita.</p>
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="text" placeholder="Your name...">
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="text" placeholder="Your email...">
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="text" placeholder="Your phone number...">
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea class="materialize-textarea" placeholder="Your message..."></textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col s12 m5 offset-m1">
+          <h5>Address</h5>
+          <p>123 City name, Street, City, Country</p>
+          <h5>Email</h5>
+          <p> cahee@domain</p>
+          <h5>Phone</h5>
+          <p>+012 345 6789</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+      <div class="container">
+        © 2014 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Compiled and minified Materialize JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>

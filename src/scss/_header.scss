@@ -1,0 +1,27 @@
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/2-91.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 40%;
+
+    nav {
+        // background-color: transparent;
+        background-color: #fff;
+
+        .brand-logo {
+            color: #000;
+            font-family: 'Pacifico'
+        }
+
+        ul {
+
+            a {
+                color: #000;
+                font-weight: 700;
+            }
+        }
+
+    }
+}

@@ -1,5 +1,51 @@
 @import 'variables';
+@import 'header';
+@import 'about';
+@import 'services';
+@import 'gallery';
+@import 'subscribe';
+@import 'blog';
+@import 'contact';
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,400,700');
 
 body {
-    background-color: $main-color;
+    width: 100%;
+    font-family: 'Raleway';
+    min-height: 300vh;
+    scroll-behavior: smooth;
+
+    .section-title {
+        font-weight: 700;
+        font-size: 50px;
+    }
+
+    .mt-5 {
+        margin-top: 5rem;
+    }
+
+    .mt-2 {
+        margin-top: 2rem;
+    }
+
+    .mb-3 {
+        margin-bottom: 3rem;
+    }
+
+    .pt-5 {
+        padding-top: 5rem;
+    }
+
+    section {
+        min-height: 90vh;
+        padding: 30px 0;
+
+        .container.full {
+            min-height: 90vh !important;
+        }
+
+        .row {
+            height: 100% !important;
+        }
+    }
 }
