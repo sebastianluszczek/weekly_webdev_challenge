@@ -1,8 +1,9 @@
-.services {
+.culture {
     text-align: center;
     padding: 8%;
+    background-color: #f4f4f4;
 
-    .services-header {
+    .culture-header {
 
         h2 {
             text-transform: uppercase;
@@ -16,27 +17,41 @@
         }
     }
 
-    .services-boxes {
+    .culture-boxes {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 30px;
         margin-top: 8%;
 
         .box {
+            .border {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 4px solid #666;
+                margin: 0 auto;
+                position: relative;
+            }
+
             i {
-                font-size: 70px;
+                font-size: 40px;
                 margin-bottom: 20px;
+                color: #666;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
 
             h4 {
                 font-family: 'Montserrat';
                 text-transform: uppercase;
-                padding: 20px;
-                font-size: 24px;
+                padding-top: 20px;
+                font-size: 18px;
             }
 
             p {
-                line-height: 140%;
+                line-height: 120%;
                 padding: 10px;
             }
         }

@@ -1,0 +1,15 @@
+.partners {
+    .container {
+        display: grid;
+        grid-gap: 40px;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        padding: 5% 0;
+
+        img {
+            width: 100%;
+            padding: 40px;
+            filter: grayscale(1) brightness(1.2);
+        }
+    }
+}

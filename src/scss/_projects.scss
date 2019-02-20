@@ -1,6 +1,6 @@
 .projects {
     text-align: center;
-    margin: 10% auto;
+    padding: 8%;
 
     .projects-header {
         margin-bottom: 8%;
@@ -9,7 +9,7 @@
             text-transform: uppercase;
             font-family: 'Montserrat';
             margin-bottom: 20px;
-            font-size: 40px;
+            font-size: 36px;
         }
 
         p {
@@ -44,7 +44,8 @@
             .details-btn {
                 color: $main-color;
                 font-family: 'Montserrat';
-                margin-top: 50px;
+                position: relative;
+                top: 20px;
                 font-weight: 700;
                 font-size: 20px;
                 text-transform: uppercase;
