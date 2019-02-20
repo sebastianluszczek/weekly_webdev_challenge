@@ -1,5 +1,41 @@
 @import 'variables';
+@import 'header';
+@import 'services';
+@import 'work';
+@import 'projects';
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Slab:300');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    background-color: $main-color;
+    font-family: 'Roboto Slab';
+    min-height: 300vh;
+    overflow-x: hidden;
+
+
+    .container {
+        width: 70%;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    .btn {
+        width: 240px;
+        height: 64px;
+        margin-top: 50px;
+        color: #fff;
+        border: none;
+        border-radius: 32px;
+        font-size: 18px;
+        box-shadow: none;
+        background-color: $main-color;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
 }

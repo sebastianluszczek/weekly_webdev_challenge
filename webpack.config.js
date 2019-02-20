@@ -15,7 +15,7 @@ module.exports = {
         filename: 'bundle.js'
     },
     watch: true,
-    mode: "development", //ta opcja zostanie pominięta jeżeli użyjemy npm run build
+    mode: "development",
     devtool: "source-map",
     module: {
         rules: [{
@@ -25,10 +25,8 @@ module.exports = {
                     loader: 'babel-loader',
                     options: {
                         presets: [
-                            ["env", {
-                                targets: {
-                                    browsers: ['> 1%']
-                                }
+                            ['@babel/preset-env', {
+                                "targets": "> 0.25%, not dead"
                             }]
                         ]
                     }
@@ -55,6 +53,22 @@ module.exports = {
                         publicPath: 'img/'
                     }
                 }]
+            }, {
+                test: /\.ico$/,
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]'
+                }
+            },
+            {
+                test: /\.(ttf|eot|woff|woff2|otf)$/,
+                use: {
+                    loader: "url-loader",
+                    options: {
+                        name: "./fonts/[name].[ext]",
+                        publicPath: "../"
+                    },
+                },
             }
         ]
     },
@@ -62,7 +76,8 @@ module.exports = {
         extractPlugin,
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: 'src/index.html'
+            template: 'src/index.html',
+            // favicon: 'src/favicon.ico'
         }),
         new CleanWebpackPlugin(['dist'])
     ]

@@ -1,0 +1,44 @@
+.services {
+    text-align: center;
+    margin: 10% auto;
+
+    .services-header {
+
+        h2 {
+            text-transform: uppercase;
+            font-family: 'Montserrat';
+            margin-bottom: 20px;
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .services-boxes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        margin-top: 10%;
+
+        .box {
+            i {
+                font-size: 80px;
+                margin-bottom: 20px;
+            }
+
+            h4 {
+                font-family: 'Montserrat';
+                text-transform: uppercase;
+                padding: 20px;
+                font-size: 24px;
+            }
+
+            p {
+                line-height: 160%;
+                padding: 10px;
+            }
+        }
+    }
+}

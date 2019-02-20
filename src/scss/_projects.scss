@@ -1,0 +1,95 @@
+.projects {
+    text-align: center;
+    margin: 10% auto;
+
+    .projects-header {
+        margin-bottom: 8%;
+
+        h2 {
+            text-transform: uppercase;
+            font-family: 'Montserrat';
+            margin-bottom: 20px;
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+
+        .projects-text {
+            text-align: left;
+
+            h4,
+            h5 {
+                font-family: 'Montserrat';
+                text-transform: uppercase;
+            }
+
+            h4 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+            h5 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            .details-btn {
+                color: $main-color;
+                font-family: 'Montserrat';
+                margin-top: 50px;
+                font-weight: 700;
+                font-size: 20px;
+                text-transform: uppercase;
+            }
+        }
+
+        .features-list {
+            margin: 20px 0;
+
+            .feature {
+                padding: 10px 0;
+                display: grid;
+                grid-template-columns: 80px auto;
+
+                .icon {
+                    display: inline-block;
+                    width: 60px;
+                    height: 60px;
+                    border: 2px solid #000;
+                    border-radius: 50%;
+                    position: relative;
+
+                    .fas {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size: 28px;
+                    }
+                }
+
+                .text {
+                    display: inline-block;
+                }
+            }
+        }
+
+        .projects-img {
+            grid-column: 2/3;
+            position: relative;
+
+            img {
+                position: absolute;
+                left: 0;
+            }
+        }
+    }
+}
