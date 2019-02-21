@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="home">
         <div class="top-bar">
             <div class="container">
                 <div class="nav-wrapper">
@@ -22,30 +26,43 @@
                         <p>treehouse</p>
                     </div>
                     <nav>
+                        <div class="hamburger">
+                            <span class="nav_btn_bar"></span>
+                            <span class="nav_btn_bar"></span>
+                            <span class="nav_btn_bar"></span>
+                        </div>
                         <ul class="main-nav">
-                            <li class="nav-btn">home</li>
-                            <li class="nav-btn">about</li>
-                            <li class="nav-btn">blog</li>
-                            <li class="nav-btn">portfolio</li>
-                            <li class="nav-btn">contact</li>
+                            <li class="nav-btn"><a href="#home" class="nav_a">home</a></li>
+                            <li class="nav-btn"><a href="#services" class="nav_a">services</a></li>
+                            <li class="nav-btn"><a href="#work" class="nav_a">work</a></li>
+                            <li class="nav-btn"><a href="#projects" class="nav_a">projects</a></li>
+                            <li class="nav-btn"><a href="#contact" class="nav_a">contact</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
-
         </div>
         <div class="baner">
             <div class="baner-content">
-                <h1>creative digital solutions</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button class="btn">Viev portfolio</button>
+                <div class="baner-text">
+                    <h1>creative digital solutions</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button class="btn">Viev portfolio</button>
+                </div>
             </div>
         </div>
+        <ul class="mobile-nav">
+            <li class="nav-btn"><a href="#home" class="nav_a">home</a></li>
+            <li class="nav-btn"><a href="#services" class="nav_a">services</a></li>
+            <li class="nav-btn"><a href="#work" class="nav_a">work</a></li>
+            <li class="nav-btn"><a href="#projects" class="nav_a">projects</a></li>
+            <li class="nav-btn"><a href="#contact" class="nav_a">contact</a></li>
+        </ul>
     </header>
     <main>
-        <section class="services">
+        <section class="services" id="services">
             <div class="container">
-                <div class="services-header">
+                <div class="section-header">
                     <h2>professional services</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, numquam.</p>
                 </div>
@@ -71,7 +88,7 @@
                 </div>
             </div>
         </section>
-        <section class="work">
+        <section class="work" id="work">
             <i class="fas fa-cog"></i>
             <div class="baner">
                 <div class="baner-text">
@@ -88,9 +105,9 @@
 
             </div>
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="container">
-                <div class="projects-header">
+                <div class="section-header">
                     <h2>latest projects</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, numquam.</p>
                 </div>
@@ -140,7 +157,7 @@
         </section>
         <section class="culture">
             <div class="container">
-                <div class="culture-header">
+                <div class="section-header">
                     <h2>culture & values</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, numquam.</p>
                 </div>
@@ -170,8 +187,8 @@
         </section>
         <section class="clients">
             <div class="container">
-                <div class="clients-header">
-                    <h2>culture & values</h2>
+                <div class="section-header">
+                    <h2>our awesome clients</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, numquam.</p>
                 </div>
                 <div class="clients-opinions">
@@ -208,7 +225,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <h2>redy to talk about your project?</h2>
             <button class="btn-sec">contact us</button>
         </section>

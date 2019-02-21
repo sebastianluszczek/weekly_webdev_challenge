@@ -2,44 +2,14 @@
     text-align: center;
     padding: 8%;
 
-    .projects-header {
-        margin-bottom: 8%;
-
-        h2 {
-            text-transform: uppercase;
-            font-family: 'Montserrat';
-            margin-bottom: 20px;
-            font-size: 36px;
-        }
-
-        p {
-            font-size: 18px;
-        }
-    }
-
     .projects-grid {
+        margin-top: 8%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 40px;
 
         .projects-text {
             text-align: left;
-
-            h4,
-            h5 {
-                font-family: 'Montserrat';
-                text-transform: uppercase;
-            }
-
-            h4 {
-                font-size: 24px;
-                margin-bottom: 20px;
-            }
-
-            h5 {
-                font-size: 20px;
-                margin-bottom: 10px;
-            }
 
             .details-btn {
                 color: $main-color;
@@ -90,6 +60,37 @@
             img {
                 position: absolute;
                 left: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .projects {
+
+        .projects-text {
+
+            &>h4,
+            &>p {
+                text-align: center;
+            }
+        }
+
+        .projects-grid {
+            grid-template-columns: auto;
+            grid-template-rows: auto 200px;
+            grid-column-gap: 0;
+
+            .projects-img {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                position: relative;
+
+                img {
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                }
             }
         }
     }

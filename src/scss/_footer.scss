@@ -1,6 +1,4 @@
 footer {
-
-
     .main-footer {
         padding: 5% 0;
         width: 100%;
@@ -59,6 +57,39 @@ footer {
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    footer {
+        .main-footer {
+            .container {
+                width: 80%;
+                grid-template-columns: auto;
+                grid-row-gap: 40px;
+
+                .footer-grid {
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .bottom-bar {
+            .container {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .socials {
+                .circle {
+                    width: 30px;
+                    height: 30px;
+
+                    i {
+                        font-size: 16px;
+                    }
                 }
             }
         }
